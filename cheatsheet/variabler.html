@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Variabler i Javascript</h1>
+    <p>Hei, <span id= "name"></p>
 
     <script>
     //DEKLARE VARIABLER
@@ -16,7 +17,8 @@
     */
     const firstname = "Benjamin"
     console.log (firstname)
-    
+    //Skriv ut firstname-verdi til HTML-element med ID name:
+    document.getElementById("name").innerHTML = firstname
     </script>
 
 </body>
