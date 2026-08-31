@@ -7,20 +7,26 @@
 </head>
 <body>
     <h1>Variabler i Javascript</h1>
-    <p>Hei, <span id= "name"></p>
+    <p>Hei, <span id= "name"></span> (<span id="age">?</span> år)</p>
 
     <script>
-    //DEKLARE VARIABLER
-    /*
-    * CONST: deklarere en konstant verdi som ikke skal endres
-    * LET: deklarere en verdi som KAN endres
-    */
-    const firstname = "Benjamin Nicolay"
-    console.log (firstname)
-    const lastname = "Elvestad"
-    //Skriv ut firstname-verdi til HTML-element med ID name:
-    document.getElementById("name").innerHTML = firstname
-    </script>
+        //DEKLARE VARIABLER
+        /*
+        * CONST: deklarere en konstant verdi som ikke skal endres
+        * LET: deklarere en verdi som KAN endres
+        */
+        const firstname = "Benjamin Nicolay"
+        console.log (firstname)
+        const lastname = "Elvestad"
+        //Skriv ut firstname-verdi til HTML-element med ID name:
+        //Vi bruker konkatinering, altså slår sammen variabler og tekst, for å skrive ut fornavn + etternavn:
+        document.getElementById("name").innerHTML = firstname + " " + lastname
+
+        //DEKLARERE EN VARIABEL FOR ALDER
+        const birthYear = 2002
+        let age = 2026 - birthYear
+        document.getElementById("age").innerHTML = age
+        </script>
 
 </body>
 </html>
