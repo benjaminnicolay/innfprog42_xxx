@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="utskrift"></p>
+
+    <script>
+
+        const dyr = ["Esel", "Rumpetroll", "Sekretærfugl", "Hund", "Katt", "Marsvin", "Hest", "Helene", "Siina", "Allie", ];
+
+        dyr.push("Adrian", "Marie",);
+
+        dyr.sort()
+
+        const antallDyr = dyr.length
+
+        document.getElementById("utskrift").innerHTML = `Antall dyr: ${antallDyr}<br>${dyr.join(", ")}`;
+
+    </script>
+    
+</body>
+</html>
